@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #e3f2fd;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #29b6f6;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+h2 {
+    margin: 20px 0;
+    color: black;
+}
+
+/* Magic Box Styling */
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.magic-box {
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.magic-box p {
+    position: absolute;
+    text-align: center;
+}
+
+.magic-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+/* Hover Effect */
+.magic-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.magic-box:hover p {
+    display: none;
+}
+
+.magic-box:hover img {
+    display: block;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 250px;
+    padding: 15px;
+    background-color: #29b6f6;
+    color: white;
+    
+}

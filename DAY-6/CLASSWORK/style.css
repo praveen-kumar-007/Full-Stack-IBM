@@ -1,0 +1,32 @@
+#parent{
+    background-color: rgb(194, 49, 49);
+    height: 500px;
+    border: 1px solid gray;
+
+
+}
+
+#child{
+    background-color: blue;
+    height: 200px;
+}
+
+
+#child>#chatbot{
+    background-color: green;
+    height: 100px;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    border-radius: 10px;
+}
+
+#box{
+    background-color: yellow;
+    height: 100px;
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+    border-radius: 10px;
+    display: none;
+}

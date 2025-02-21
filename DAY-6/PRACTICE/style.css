@@ -1,0 +1,90 @@
+#parent{
+    background-color: aqua;
+    height: 500px;
+    width: 80%;
+    border: 1px solid gray;
+    /* position: relative; */
+    /* top: 50px;
+    right: 20px; */
+}
+
+#child{
+    background-color: blueviolet;
+    height: 200px;
+    border: 1px solid red;
+    width: 60%;
+    /* position: absolute; */
+    right: 50px;
+}
+
+#grandchild{
+    background-color: brown;
+    height: 100px;
+    border: 1px solid blue;
+    width: 80%;
+    /* position: absolute; */
+    right: 10px;
+}
+
+#child>#chatbot{
+    background-color: teal;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+#box{
+    height: 300px;
+    width: 200px;
+    border: 1px solid red;
+    background-color: tomato;
+    position: fixed;
+    bottom: 110px;
+    right: 20px;
+    display: none;
+    cursor: pointer;
+    
+}
+
+#parent:hover+#box{
+    display: block;
+    cursor: pointer;
+}
+#btn{
+    background-color: red;
+}
+#btn:hover{
+    background-color: blue;
+    width: 200px;
+    border: none;
+    cursor: pointer;
+}
+
+#form{
+    width: 300px;
+    height: 400px;
+    border: 1px solid gray;
+    box-shadow: 10px 10px 10px gray ;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+input{
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+   
+}
+button{
+    width: 50%;
+}
+input:focus{
+    background-color: yellowgreen;
+}
+::selection{
+    background-color: aquamarine;
+}

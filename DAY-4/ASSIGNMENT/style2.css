@@ -1,0 +1,101 @@
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0f2ff;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #30a9de;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar h1 {
+    margin: 0;
+    color: white;
+    padding-left: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Box Container */
+.box-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+/* Magic Box */
+.magic-box {
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    transition: all 0.8s ease;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.magic-box:hover {
+    background: red;
+    transform: scale(1.1);
+}
+
+/* Click Effect (Toggle Shape) */
+.magic-box:active {
+    border-radius: 50%;
+}
+
+/* Text Styling */
+.magic-box p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.magic-box .title {
+    color: rgb(19, 186, 83);
+}
+
+.magic-box .subtitle {
+    color: black;
+}
+
+/* Footer */
+.footer {
+    margin-top: 250px;
+    background-color: #30a9de;
+    padding: 10px;
+    color: white;
+}

@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+.download{
+    margin-left: 300PX; ;
+}
+
+.sign-in {
+    background-color: #0057e7;
+    color: white;
+    border: none;
+    width: 110px;
+    height: 40px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    display: flex;
+    position: relative ;
+    left: 40px;
+    top: 4px;
+}
+.user{
+    position: absolute;
+    left: 1px;
+    bottom: 0px;
+    top: 0px;
+}
+
+.banner {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    object-fit: cover;
+    margin: auto;
+    background-color: #e8f8fd;
+}
+.services {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto; 
+    width: fit-content;
+    gap: 50px;
+}
+.recharge {
+    height: 200px;
+    width: 500px;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    background-color: #f6f9fa;
+    justify-content: space-evenly;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recharge-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recharge-item img {
+    height: 50px;
+    width: 50px;
+}
+
+.recharge-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: black;
+}
+.dth {
+    height: 200px;
+    width: 500px;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    background-color: #f6f9fa;
+    justify-content: space-evenly;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dth-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dth-item img {
+    height: 50px;
+    width: 50px;
+}
+
+.dth-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: black;
+}
+
+
+
+.service-box ul li{
+    display: inline;
+} 
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}

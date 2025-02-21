@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm UPI Ad</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <img style="height: 50px;width: 150px;" src="https://assetscdn1.paytm.com/images/catalog/view/342367/1725447383123.png" alt="Paytm Logo" class="logo">
+            
+            <h1>Pay anyone directly from your bank account.</h1>
+            
+            <p class="description">Pay anyone, everywhere. Make contactless & secure<br>payments in-stores or online using Paytm UPI or<br>Directly from your Bank Account. Plus, send & receive<br>money from anyone.</p>
+            
+             
+             <div class="download-links">
+                <a href="#" class="app-store"><img style="height: 50px;width: 150px;" src="https://assetscdn1.paytm.com/images/catalog/view_item/2834703/1725432129171.png" alt="link"></a>
+                <a href="#" class="google-play"><img style="height: 50px;width: 150px;" src="https://assetscdn1.paytm.com/images/catalog/view_item/2834704/1725432148873.png" alt="link"></a>
+             </div>
+        </div> 
+        <div class="graphics">
+            
+             <img src="https://assetscdn1.paytm.com/images/catalog/view/1725447382730.png" alt="brand">
+        </div>
+    </div>
+</body>
+</html>

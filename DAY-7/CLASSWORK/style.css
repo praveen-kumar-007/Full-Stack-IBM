@@ -1,0 +1,96 @@
+/* #parent{
+    background-color: aqua;
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 200px;
+}
+
+
+#parent>div{
+    width: 2000px;
+    height: 2000px;
+    border: 2px solid black;    
+    background-color: yellow;
+}
+
+#parent div:nth-child(7){
+    background-color: red;
+    grid-area: 1/2/1/2;
+
+} */
+
+
+
+
+
+
+
+
+:root{
+    --primary-color: #f1c40f;
+    --secondary-color: #e74c3c; 
+    --main-color:aqua;
+    --main-bg-color: #f1c40f;
+}
+
+
+#parent{
+    background-color: aqua;
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2px;
+}
+
+
+
+#parent div:nth-child(1){
+    background-color: var(--primary-color);
+    height: 200px;
+    width: 400px;
+
+}
+
+#parent div:nth-child(2){
+    background-color: var(--secondary-color);
+    height: 200px;
+    width: 200px;
+
+}
+
+#parent div:nth-child(3){
+    background-color: var(--main-color);
+    height: 200px;
+    width: 200px;
+
+}
+
+#parent div:nth-child(4){
+    background-color: rgb(11, 159, 245);
+    height: 400px;
+    width: 200px;
+
+}
+
+#parent div:nth-child(5){
+    background-color: rgb(87, 70, 240);
+    height: 400px;
+    width: 400px;
+
+}
+
+#parent div:nth-child(6){
+    background-color: rgb(107, 230, 6);
+    height: 200px;
+    width: 200px;
+
+}
+#parent div:nth-child(7){
+    background-color: rgb(15, 53, 29);
+    height: 200px;
+    width: 200px;
+
+}

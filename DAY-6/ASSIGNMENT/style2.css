@@ -1,0 +1,61 @@
+body {
+    font-family: sans-serif; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; 
+}
+ 
+.container {
+    display: flex;
+    width: 900px; 
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+}
+ 
+.content {
+    flex: 1;
+    padding: 40px;
+}
+ 
+.logo {
+    width: 100px; 
+    margin-bottom: 20px;
+}
+ 
+.description {
+    margin-bottom: 30px;
+}
+.download-links {
+    display: flex;
+    justify-content: space-around;
+
+}
+.app-store, .google-play {
+    flex: 1;
+    text-align: left;
+    /* padding: 5px; */
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+}
+ 
+.graphics {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around; 
+    padding: 20px ;
+ 
+}  
+img{
+    height: 400px;
+    width:300px ;
+    
+}
