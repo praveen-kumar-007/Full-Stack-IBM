@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <a class="logo" href="/"><img src="https://pwebassets.paytm.com/commonwebassets/paytmweb/header/images/logo_new.svg" alt="Paytm Logo" height="150px" width="150px"></a>
+        <ul class="nav">
+            <li class="dropdown"><b>Ticket Booking</b>
+                <ul class="submenu">
+                    <li><a href="#">Movie Tickets</a></li>
+                    <li><a href="#">Flight Tickets</a></li>
+                    <li><a href="#">Train Tickets</a></li>
+                    <li><a href="#">Bus Tickets</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><b>Recharge & Bills</b>
+                <ul class="submenu">
+                    <li><a href="#">Mobile Recharge</a></li>
+                    <li><a href="#">Electricity Bill</a></li>
+                    <li><a href="#">DTH Recharge</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><b>Payments & Services</b>
+                <ul class="submenu">
+                    <li><a href="#">Bill Payments</a></li>
+                    <li><a href="#">Send Money</a></li>
+                    <li><a href="#">Online Payments</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><b>Payment for Business</b>
+                <ul class="submenu">
+                    <li><a href="#">Online Payments</a></li>
+                    <li><a href="#">Ofline Payments</a></li>
+                    <li><a href="#">Business Software</a></li>
+                    <li><a href="#">Business Lending</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><b>Company</b>
+                <ul class="submenu">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Latest News</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Customar care</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">CSR</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+        <div class="user-actions">
+            <div class="download-app">
+                <img alt="Download App" src="https://pwebassets.paytm.com/commonwebassets/paytmweb/header/images/downloadApp.svg">
+                Download App
+            </div>
+            <div class="sign-in" >
+                <img alt="User" src="https://pwebassets.paytm.com/commonwebassets/paytmweb/header/images/logoutImg.svg" height="50px" width="50px">
+                <span title="Sign In" style="color: white;">Sign In</span>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="main-section" style="background-color: #d0f6fc;">
+        <div class="fltimg">
+            <a href="https://pwebassets.paytm.com/frontendcommonweb/static/eb6953f1..svg" class="nav-item">
+                <span>Flights</span>
+            </a>
+            
+            <a href="https://tickets.paytm.com/trains/" class="nav-item">
+                <span>Trains</span>
+            </a>
+            <a href="https://tickets.paytm.com/international-flights/" class="nav-item">
+            </a>
+        </div>
+        
+        <div class="container" >
+            <section class="booking-section" >
+                <div class="booking-content" style="height: 10px;">
+                    <nav class="navigation">
+                        <a href="https://tickets.paytm.com/flights/">
+                            <div class="nav-item">
+                                <img src="https://pwebassets.paytm.com/frontendcommonweb/static/eb6953f1..svg" alt="Flights">
+                                <span>Flights</span>
+                            </div>
+                        </a>
+                        <a href="https://tickets.paytm.com/bus/">
+                            <div class="nav-item">
+                                <img src="https://pwebassets.paytm.com/frontendcommonweb/static/df0e26a9..svg" alt="Bus">
+                                <span>Bus</span>
+                            </div>
+                        </a>
+                        <a href="https://tickets.paytm.com/trains/">
+                            <div class="nav-item">
+                                <img src="https://pwebassets.paytm.com/frontendcommonweb/static/e398bd37..svg" alt="Trains">
+                                <span>Trains</span>
+                            </div>
+                        </a>
+                        <a href="https://tickets.paytm.com/international-flights/">
+                            <div class="nav-item">
+                                <img src="https://pwebassets.paytm.com/frontendcommonweb/static/add4d679..svg" alt="Intl. Flights">
+                                <span>Intl. Flights</span>
+                            </div>
+                        </a>
+
+
+                        <div class="logo">
+                            <img src="https://paytmtravel-images-akamai.paytm.com/icons/Paytm_Travel_Logo.svg" alt="Paytm Travel" height="100px" width="150px" style="margin-right: -900px;">
+                        </div>
+                    </nav>
+                </div>
+                <div class="flight-search">
+                    <div class="trip-type">
+                        <label>
+                            <input type="radio" name="journeyType" value="oneWay" checked> One Way
+                        </label>
+                        <label>
+                            <input type="radio" name="journeyType" value="rTrip"> Round Trip
+                        </label>
+                    </div>
+                    <div class="flight-details">
+                        <div class="location">
+                            <span style="font-size: 12px;">From</span>
+                            <br>
+                            <span id="srcCode"><b>Delhi (DEL)</b></span>
+                        </div>
+                        <img class="arrow-icon" src="https://pwebassets.paytm.com/frontendcommonweb/static/e5e744ba..png" alt="arrow">
+                        <div class="location">
+                            <span style="font-size: 12px;">To</span>
+                            <br>
+                            <span id="destCode"><b>Mumbai (BOM)</b></span>
+                        </div>
+                        <div class="date-selection">
+                            <div class="depart">
+                                <span style="font-size: 12px;">Depart</span>
+                                <br>
+                                <span id="departureDate">Thu, 27 Feb 25</span>
+                            </div>
+                            <div class="return" style="margin-left: 50px;">
+                                <span style="font-size: 12px;">Return</span>
+                                <br>
+                                <span id="addReturn" style="color: #00bcd4;">Add Return</span>
+                            </div>
+                        </div>
+                        <div class="passenger-class">
+                            <span style="font-size: 12px;">Passenger &amp; Class</span>
+                            
+                            <span id="numPax" style="margin-left: -105px;"><br>1 Traveller, Economy</span>
+                        </div>
+    
+                        <button id="flightSearch" style="width: 150px;">Search Flights</button>
+                    </div>
+
+                    <div class="special-fares">
+                        <p>Special Fares (optional)</p>
+                        <p style="color: green; margin-left: -188px; font-size: 12px;"><br><br>Extra Saving</p>
+                        <div class="fare-option">
+                            <span>Armed Forces</span>
+                            <span style="font-size: 12px; margin-left: -100px;"><br><br>Up to ₹600 off</span>
+                        </div>
+                        <div class="fare-option">
+                            <span>Student</span>
+                            <span style="font-size: 12px; margin-left: -55px;"><br><br>Extra Baggage</span>
+                        </div>
+                        <div class="fare-option">
+                            <span>Senior Citizen</span>
+                            <span style="font-size: 12px; margin-left: -97px;"><br><br>Up to ₹600 off</span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </section>
+
+    <section class="_12lT-" style="background-color:#e8f8fd; display: flex; align-items: center; justify-content: center; ">
+        <div class="_3YN8v" style="display: flex; flex-direction: column; align-items: center;display: inline;">
+            <img src="https://pwebassets.paytm.com/frontendcommonweb/static/b9191e68..svg" alt="arrow" class="BsjyC _2iMEK" style="margin-bottom: 70px;">
+            <div class="image-container" style="display: flex; flex-direction: column; align-items: center;display: inline;">
+                <img alt="" id="2988609" src="https://assetscdn1.paytm.com/images/catalog/view_item/2890665/10903092620102442.jpg" style="width: 376px; height: 200px;">
+                <img alt="" id="2988611" src="https://assetscdn1.paytm.com/images/catalog/view_item/2988611/6239586378108886.jpg" style="width: 376px; height: 200px;">
+            </div>
+            <img src="https://pwebassets.paytm.com/frontendcommonweb/static/b9191e68..svg" alt="arrow" class="BsjyC" style="margin-bottom: 70px;" >
+        </div>
+    </section>
+    
+
+    <div class="services">
+
+        <div class="recharge">
+            <div class="recharge-item">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2839929/1725624139422.png" alt="Mobile Recharge">
+                <p>Mobile <br> Recharge</p>
+            </div>
+            <div class="recharge-item">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2839930/1725624172567.png" alt="DTH Recharge">
+                <p>DTH <br> Recharge</p>
+            </div>
+            <div class="recharge-item">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2839931/1725624207849.png" alt="FasTag Recharge">
+                <p>FasTag <br> Recharge</p>
+            </div>
+            <div class="recharge-item">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2839932/1725624245350.png" alt="View All Products">
+                <p>View All <br> Products</p>
+            </div>
+            <div style="position: absolute; bottom: -95px; left: 200px;">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view/1732260479349.png" alt="" height="70px" width="80%">
+            </div>
+        </div>
+               
+        <div class="dth">
+            <div class="dth-item">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2839933/1725624373019.png" alt="Credit Card Payment">
+                <p>Credit Card <br> Payment</p>
+            </div>
+            <div class="dth-item">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2839934/1725624413059.png" alt="Electricity Bill">
+                <p>Electricity <br> Bill</p>
+            </div>
+            <div class="dth-item">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2839935/1725624449393.png" alt="Broadband Bill">
+                <p>Broadband <br> Bill</p>
+            </div>
+            <div class="dth-item">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2839932/1725624245350.png" alt="View All Products">
+                <p>View All <br> Products</p>
+            </div>
+            <div style="position: absolute; bottom: -95px; right: 200px;">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view/1732260510732.png"alt="" height="70px" width="80%">
+            </div>
+            
+        </div>
+    </div> 
+
+    <div class="investment-section" style="margin-left: 100px;">
+        <img class="brand-logo" src="https://assetscdn1.paytm.com/images/catalog/view/308774/1617696247991.png" alt="Brand Logo" height="400px" width="400px">
+        <div class="investment-title" style="margin-left: 200px; "><br>Build Long-term Wealth & Achieve your Goals.</div>
+        <div class="investment-description"  style="margin-left: 200px; ">
+            Investing on Paytm Money is transparent, low-cost, and commission-free. Buy stocks & mutual funds that can help you create wealth & realize your dreams.
+        </div>
+        <div class="learn-more" style="width: 140px; border-radius: 50px;margin-left: 200px;">
+            <a href="https://www.paytmmoney.com" target="_blank" rel="noreferrer"><span style="color: white;">Learn More →</span></a>
+        </div>
+        <img src="https://assetscdn1.paytm.com/images/catalog/view/1725446620368.png" alt="brand" height="400px" width="400px" style="margin-left: 600px; margin-top: -330px;">
+    </div>
+
+
+    <div class="ser24" style="height: 70px; width: 70%; background-color: rgb(12, 12, 52); margin: auto; border-radius: 10px;justify-content: center; display: flex;">
+        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2832559/1725599834382.png" alt="logo" height="50px" width="50px" style="margin-left: -120px; margin-top: 10px;" >
+        <p style="color: white; margin-top: 30px;"><b>&nbsp;&nbsp;&nbsp;&nbsp;24X7 Trusted customar support to assist and help you in every step of your journy</b></p>
+        <p style="color: white; margin-top: 30px; "><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn More -></b></p>
+    </div>
+
+
+    <div class="credit-card-section" style="margin: auto;;">
+        <img class="logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/2832350/1725363772575.png" alt="logo">
+        <div class="title">One destination for Credit Cards</div>
+        <div class="description">
+            Paytm HDFC, SBI & Axis Bank Credit Card with assured Cashback and incredible offers.
+        </div>
+        <div class="apply-now">
+            <a href="https://paytm.com/loans-credit-cards/credit-cards/" target="_blank" rel="noreferrer">Apply Now →</a>
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/1726056573080.png" alt="link">
+        </div>
+        <img class="brand" src="https://assetscdn1.paytm.com/images/catalog/view_item/2832350/1725363740070.png" alt="brand">
+        <img class="logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/2834804/1725623952233.png" alt="logo">
+        <div class="title">Insurance made easy.</div>
+        <div class="description">
+            Buying insurance does not have to be tedious, time-consuming & confusing. 
+            Paytm Insurance removes the worry of getting insured by making it simple, convenient & easy-to-understand.
+        </div>
+        <div class="get-now">
+            <a href="https://paytminsurance.co.in" target="_blank" rel="noreferrer">Get It Now →</a>
+        </div>
+        <img class="brand" src="https://assetscdn1.paytm.com/images/catalog/view_item/2834804/1726029425801.png" alt="brand">
+    </div>
+
+    <div class="payment-section" style="margin: auto; height: 300px; width: 1500px;">
+        <div class="payment-info">
+            <img class="brand-logo" src="https://assetscdn1.paytm.com/images/catalog/view/342367/1725447383123.png" alt="brandLogo">
+            <div class="title">Pay anyone directly from your bank account.</div>
+            <div class="description">
+                Pay anyone, everywhere. Make contactless & secure payments in-stores or online using Paytm UPI or directly from your bank account. 
+                Plus, send & receive money from anyone.
+            </div>
+            <div class="app-links">
+                <a href="https://itunes.apple.com/in/app/mobile-recharge-bill-payments/id473941634?mt=8" target="_blank" rel="noreferrer">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2834703/1725432129171.png" alt="App Store">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=net.one97.paytm" target="_blank" rel="noreferrer">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2834704/1725432148873.png" alt="Google Play">
+                </a>
+            </div>
+        </div>
+        <div class="payment-image">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view/1725447382730.png" alt="brand">
+        </div>
+    </div>
+
+
+
+
+    <div class="payments-section" style="margin: auto; ">
+        <div class="payments-info">
+            <img class="brand-logo" src="https://assetscdn1.paytm.com/images/catalog/view/342368/1725447964962.png" alt="brandLogo" >
+            <div class="title">Accept payments online & offline</div>
+            <div class="description">
+                Millions of small & big businesses use Paytm to accept payments anywhere, anytime with a wide range of solutions for all kinds of merchants.
+            </div>
+            <div class="learn-more">
+                <a href="https://business.paytm.com/" target="_blank" rel="noreferrer">Learn More →</a>
+            </div>
+        </div>
+        <div class="payments-image" style="height: 300px; width: 300px;">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view/1736422178778.png" alt="brand" height="300px" width="300px">
+        </div>
+    </div>
+</body>
+</html>

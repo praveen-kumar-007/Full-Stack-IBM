@@ -1,0 +1,731 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 60px;
+}
+
+.logo img {
+    height: 40px;
+    margin-left: 50px;
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+}
+
+.nav li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 8px;
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.user-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.download-app,
+.sign-in {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 90px;
+}
+
+.download-app img,
+.sign-in img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.sign-in img {
+    height: 32px;
+    margin-left: -9px;
+}
+
+.sign-in{
+    height: 35px;
+    width: 110px;
+    border-radius: 50px;
+    background-color: #002970;
+}
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: #00bcd4;
+    /* height: 200px; */
+}
+
+.booking-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.navigation {
+    display: flex;
+    padding: 10px 0;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.logo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.flight-search {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.trip-type {
+    display: flex;
+    gap: 15px;
+}
+
+.flight-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.arrow-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.date-selection, .passenger-class {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #00bcd4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.special-fares {
+    margin-top: 20px;
+    display: flex;
+    gap: 70px;
+}
+
+.fare-option {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+
+.slider-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.image-list {
+    display: flex;
+    gap: 10px;
+}
+
+.image-list img {
+    width: 376px;
+    height: 125px;
+    border-radius: 5px;
+}
+
+
+.recharge-section {
+    background-color: #fff;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.recharge-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.option {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .option img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+} */
+.services {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto; 
+    width: fit-content;
+    gap: 20px;
+}
+.recharge {
+    height: 200px;
+    width: 500px;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    background-color: #f6f9fa;
+    justify-content: space-evenly;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recharge-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recharge-item img {
+    height: 50px;
+    width: 50px;
+}
+
+.recharge-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: black;
+}
+.dth {
+    height: 200px;
+    width: 500px;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    background-color: #f6f9fa;
+    justify-content: space-evenly;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dth-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dth-item img {
+    height: 50px;
+    width: 50px;
+}
+
+.dth-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: black;
+}
+
+
+
+.service-box ul li{
+    display: inline;
+} 
+
+.option span {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.bill-payments {
+    background-color: #fff;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.payment-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.option {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.option span {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+.investment-section {
+    background-color: #ffffff;
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    /* display: inline; */
+}
+
+.brand-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.investment-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.investment-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.learn-more a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0073e6;
+}
+
+.learn-more a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+.support-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.support-container {
+    background-color: #1e2b5b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.support-link {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.support-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.support-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.support-text span {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    color: #d9d9d9;
+}
+
+.learn-more {
+    background-color: #1b2e5b;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.learn-more:hover {
+    background-color: #15234a;
+    cursor: pointer;
+}
+
+
+
+
+
+.credit-card-section {
+    background-image: url('https://assetscdn1.paytm.com/images/catalog/view_item/1725638720587.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.apply-now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.apply-now a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.apply-now a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.apply-now img {
+    width: 20px;
+    height: auto;
+}
+
+.brand {
+    width: 100px;
+    height: auto;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+.insurance-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    color: #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.get-now {
+    margin-top: 10px;
+}
+
+.get-now a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #007bff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.get-now a:hover {
+    background-color: #0056b3;
+}
+
+.brand {
+    width: 100px;
+    height: auto;
+    margin-top: 15px;
+}
+
+
+
+
+.payment-section {
+    display: flex;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-info {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.brand-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.app-links a {
+    margin-right: 10px;
+}
+
+.app-links img {
+    width: 120px;
+    height: auto;
+}
+
+.payment-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-image img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+
+
+
+
+.payments-section {
+    display: flex;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payments-info {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.brand-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.learn-more a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.learn-more a:hover {
+    text-decoration: underline;
+}
+
+.payments-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payments-image img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
