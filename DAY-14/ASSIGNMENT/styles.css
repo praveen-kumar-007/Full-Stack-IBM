@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+    background-color: aqua;
+}
+#navbar{
+    height: 50px;
+    width: 100%;
+    background-color: #262626;
+    position: fixed;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    
+}
+
+li{
+    display: flex;
+}
+
+li>a{
+    text-decoration: none; 
+    color: white; 
+    padding: 15px;
+}
+
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#cart {
+    margin: auto;
+    width: 50%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    text-align: center;
+    align-items: center;
+}
+
+#cart th, #cart td {
+    border: 1px solid #0a0a0a;
+    padding: 10px;
+    text-align: center;
+}
+
+#cart th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-align: center;
+}
+.product{
+    border: 1px solid #0b0b0b;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0d3116;
+}
+
+#checkout-form{
+    width: 35%;
+    height: auto;
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 5px;
+    background-color: rgb(245, 180, 134);
+    padding: 10px;
+}
+#checkout-form>input{
+    display: block;
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+}
+input:focus{
+    background-color: rgb(216, 186, 147);
+}
+#checkout-form>select, textarea{
+    display: block;
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+#order-summary {
+    margin: auto;
+    width: 50%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    text-align: center;
+    align-items: center;
+}
+
+#order-summary th, #order-summary td {
+    border: 1px solid #0a0a0a;
+    padding: 10px;
+    text-align: center;
+}
+
+#order-summary th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-align: center;
+}
