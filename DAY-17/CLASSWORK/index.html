@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Mockup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #b42525;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header input[type="text"] {
+            width: 50%;
+            padding: 5px;
+            border-radius: 2px;
+            border: none;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .video-grid div {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1024px-YouTube_Logo_2017.svg.png" alt="" width="100",background-color="white">
+        </div>
+        <input type="text" placeholder="Search">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Trending</li>
+                <li>Subscriptions</li>
+            </ul>
+        </nav>
+    </header>
+     <section class="video-grid">
+        <div>
+            <img src="thumbnail.jpg" alt="Thumbnail" style="width:100%;">
+            <h3>Video Title</h3>
+            <p>Channel Name</p>
+        </div>
+        <div>
+            <img src="thumbnail.jpg" alt="Thumbnail" style="width:100%;">
+            <h3>Video Title</h3>
+            <p>Channel Name</p>
+        </div>
+    </section>
+</body>
+</html>
