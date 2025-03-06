@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #ff0000;
+    --background: #fff;
+    --text-color: #333;
+    --card-bg: #f9f9f9;
+}
+
+[data-theme="dark"] {
+    --primary-color: #ff4444;
+    --background: #181818;
+    --text-color: #fff;
+    --card-bg: #282828;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.navbar {
+    background: var(--primary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.nav-left, .nav-center, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container {
+    display: flex;
+    min-height: calc(100vh - 60px);
+}
+
+.sidebar {
+    width: 200px;
+    padding: 1rem;
+    background: var(--card-bg);
+}
+
+.sidebar-item {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.sidebar-item:hover {
+    background: rgba(0,0,0,0.1);
+}
+
+.main-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.video-card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.video-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.video-info {
+    padding: 1rem;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+#search-btn {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    border-radius: 4px;
+}
+
+#search-input {
+    padding: 0.5rem;
+    width: 300px;
+    border: none;
+    border-radius: 4px;
+}
+
+.loading, .error {
+    text-align: center;
+    padding: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        left: -200px;
+        top: 60px;
+        height: 100%;
+        transition: left 0.3s ease;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    #search-input {
+        width: 200px;
+    }
+}

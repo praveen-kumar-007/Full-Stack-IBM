@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="full-body">
+        <!-- Navigation Bar -->
+        <div class="nav-container">
+            <nav>
+                <div class="main-nav-container">
+                    <div class="menu">
+                        <i class="fa-solid fa-bars" id="menu-toggle"></i>
+                        <img src="https://1000logos.net/wp-content/uploads/2017/05/Youtube-Logo.png" alt="YouTube Logo" class="logo">
+                    </div>
+                    <div class="nav-search">
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search" class="search-input" id="search-input">
+                            <button class="search-button" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <div class="microphone">
+                            <i class="fa-solid fa-microphone"></i>
+                        </div>
+                    </div>
+                    <div class="create-notification">
+                        <div class="create">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="notification">
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+                        <div class="user">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" alt="User" class="user-icon">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidebar">
+            <ul>
+                <li><i class="fa-solid fa-house"></i> Home</li>
+                <li><i class="fa-solid fa-fire"></i> Trending</li>
+                <li><i class="fa-solid fa-play-circle"></i> Subscriptions</li>
+                <hr>
+                <li><i class="fa-solid fa-user"></i> You</li>
+                <li><i class="fa-solid fa-history"></i> History</li>
+                <li><i class="fa-solid fa-play"></i> Playlists</li>
+                <li><i class="fa-solid fa-thumbs-up"></i> Liked Videos</li>
+                <li><i class="fa-solid fa-download"></i> Downloads</li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div id="loading" class="loading">Loading videos...</div>
+            <div class="video-container" id="video-container"></div>
+            <div id="error" class="error hidden"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

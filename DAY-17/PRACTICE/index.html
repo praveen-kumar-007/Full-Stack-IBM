@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <button id="menu-btn" class="menu-btn">☰</button>
+            <div class="logo">YouTube Clone</div>
+        </div>
+        <div class="nav-center">
+            <input type="text" id="search-input" placeholder="Search videos...">
+            <button id="search-btn">🔍</button>
+        </div>
+        <div class="nav-right">
+            <button id="theme-toggle">Toggle Dark Mode</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar hidden">
+            <div class="sidebar-item">Home</div>
+            <div class="sidebar-item">Trending</div>
+            <div class="sidebar-item">Subscriptions</div>
+        </aside>
+        
+        <main class="main-content">
+            <div id="loading" class="loading">Loading videos...</div>
+            <div id="video-grid" class="video-grid"></div>
+            <div id="error" class="error hidden"></div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
