@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "Updated Laptop",
+    "price": 1099.99,
+    "category": "Electronics"
+  },
+  {
+    "id": "2",
+    "name": "Headphones",
+    "price": 199.99,
+    "category": "Electronics"
+  },
+  {
+    "id": "3",
+    "name": "Smartphone",
+    "price": 699.99,
+    "category": "Electronics"
+  },
+  {
+    "id": "c9490a51-421a-4907-a802-379cbe68ff27",
+    "name": "Tablet",
+    "price": 499.99,
+    "category": "Electronics"
+  }
+]
